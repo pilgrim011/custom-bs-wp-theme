@@ -1,0 +1,165 @@
+/*
+ Theme Name:   Jobbrs Test Child
+ Theme URI:    http://example.com/jobbrs-test-child
+ Description:  Jobbrs Test Child Theme
+ Author:       Zoran Stanić
+ Author URI:   http://example.com
+ Template:     main_test_theme
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         responsive-layout
+ Text Domain:  jobbrstestchild
+*/
+@font-face {
+  font-family: myriad-pro;
+  src: url("./fonts/myriad_pro_regular.ttf");
+}
+@font-face {
+  font-family: karla-regular;
+  src: url("./fonts/karla-regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+
+  src: url("./fonts/roboto-light.ttf");
+}
+@font-face {
+  font-family: "Roboto Regular";
+
+  src: url("./fonts/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Medium";
+
+  src: url("./fonts/roboto-medium.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+
+  src: url("./fonts/roboto-bold.ttf");
+}
+html,
+body {
+  height: 100%;
+}
+h1#h1title {
+  font-family: myriad-pro !important;
+}
+p#subtitle {
+  font-family: karla-regular !important;
+}
+h3#h3title {
+  font-family: "Roboto Light";
+}
+h3.widget-title {
+  font-family: "Roboto Bold";
+  text-align: center;
+  font-size: 12px;
+}
+
+.jumbotron-fluid {
+  background-image: url("./img/himage.png");
+  background-size: cover;
+  height: 50vh;
+}
+.container-fluid {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*p {
+  font-family: "Roboto" !important;
+}*/
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #6fb7e9;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: #3c8dc5;
+}
+
+ul {
+  list-style: none;
+}
+#widget-area div ul li:first-of-type > a {
+  color: #1e73b1 !important;
+}
+ul li a {
+  color: black !important;
+  font-family: "Roboto Regular";
+}
+​ /*p#author {
+  margin-left: 1.5em;
+  font-family: "Roboto Regular" !important;
+}*/
+p {
+  font-family: "Roboto Regular" !important;
+}
+a#readmore {
+  font-family: "Roboto Medium" !important;
+}
+.page-numbers {
+  font-family: "Roboto Regular" !important;
+  text-transform: uppercase;
+}
+img.wp-post-image {
+  /*margin-top: 60% !important;*/
+  max-width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#foot {
+  height: 300px !important;
+}
+#footer {
+  height: 100%;
+}
+.newline {
+  display: block;
+  margin-bottom: 1em;
+  font-family: "Roboto Regular";
+  color: black;
+  background-color: #33fba4;
+}
+
+.pagination {
+  text-align: center;
+}
+.empty {
+  height: 20vh !important;
+}
+ul.page-numbers {
+  text-align: center;
+}
+ul.page-numbers li {
+  display: inline;
+}
+.current {
+  color: blue;
+}

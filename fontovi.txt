@@ -1,0 +1,13 @@
+﻿
+htitle Myriad Pro Regular 
+hsubtitle Karla Regular
+news title Roboto Light
+author Roboto Regular
+text Roboto Regular
+Read More Roboto Medium
+previous roboto modeium
+next + pagination Roboto Regular
+tags title roboto bold
+tags Roboto Regular
+recommended posts title roboto bold
+rec. posts roboto regular
