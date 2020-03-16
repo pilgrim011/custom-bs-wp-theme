@@ -40,6 +40,11 @@
 
   src: url("./fonts/roboto-bold.ttf");
 }
+@media only screen and (max-width: 599px) {
+  #widget-area {
+    display: none;
+  }
+}
 html,
 body {
   height: 100%;
@@ -52,11 +57,12 @@ p#subtitle {
 }
 h3#h3title {
   font-family: "Roboto Light";
+  font-size: 30pt;
 }
 h3.widget-title {
   font-family: "Roboto Bold";
   text-align: center;
-  font-size: 12px;
+  font-size: 12pt;
 }
 
 .jumbotron-fluid {
@@ -109,11 +115,14 @@ ul {
 ul li a {
   color: black !important;
   font-family: "Roboto Regular";
+  font-size: 14pt !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-​ /*p#author {
-  margin-left: 1.5em;
+​ p#author {
+  font-size: 11pt !important;
   font-family: "Roboto Regular" !important;
-}*/
+}
 p {
   font-family: "Roboto Regular" !important;
 }
@@ -134,16 +143,13 @@ img.wp-post-image {
   flex-wrap: wrap;
 }
 
-#foot {
-  height: 300px !important;
-}
-#footer {
-  height: 100%;
-}
 .newline {
   display: block;
+  margin-left: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   font-family: "Roboto Regular";
+  font-size: 11pt !important;
   color: black;
   background-color: #33fba4;
 }
@@ -152,7 +158,7 @@ img.wp-post-image {
   text-align: center;
 }
 .empty {
-  height: 20vh !important;
+  height: 50vh !important;
 }
 ul.page-numbers {
   text-align: center;

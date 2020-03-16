@@ -25,11 +25,16 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 <div class="container mt-5 pt-5">
 <div class="row">
-    <div class="col-sm">
-  <h3 id="h3title"><?php the_title(); ?></h3>
+    <div class="col-sm-8">
+    
+  <h3 id="h3title"><?php echo str_replace(",", ",<br />", get_the_title()); ?></h3>
   <div class="d-flex"><?php  echo get_avatar( get_the_author_email(), "32" ); ?><p id="author" class="ml-2"><?php the_author(); ?></p></div>
-<p id="article" class="text-left"><?php the_excerpt(); ?></p><a id = "readmore" class ="text-body font-weight-bold" href="<?php the_permalink(); ?>">Read More</a></div> <div class="col-sm images"><?php echo get_the_post_thumbnail( $post_id, "thumbnail", array("class" => "img-fluid image" ) );?></div>
-<div class="col-sm mt-0">
+  <div class="col-sm">
+  <div class="row">
+    <div class="col-sm">
+<p id="article" class="text-left"><?php the_excerpt(); ?></p><a id = "readmore" class ="text-body font-weight-bold" href="<?php the_permalink(); ?>">Read More</a></div> <div class="col-sm"><?php echo get_the_post_thumbnail( $post_id, "thumbnail", array("class" => "mx-auto d-block mt-3" ) );?></div>
+</div></div></div>
+<div class="col-sm-4 mt-0">
 <?php
 
 if ( is_active_sidebar( "sidebar" ) && $i == 1) : ?>
@@ -39,31 +44,25 @@ if ( is_active_sidebar( "sidebar" ) && $i == 1) : ?>
 
 <?php endif; ?>
 </div>
-<div class="container">
-<div class="row">
-    <div class="col-sm empty">
-      </div>
-      </div>
-      </div>
-
+</div>
+</div>
 
    <?php 
    if($i == 1) { 
     $i++;
   }
   
-endwhile;
-   
-   
-
-
-
-
-  
-
-
-get_footer();?>
-<div class="container"><div class="row"><div class="col">
+endwhile;?>
+<div class="container">
+<div class="row">
+    <div class="col-sm empty">
+      </div>
+      </div>
+      </div>
+<?php get_footer();?>
+<div class="container">
+<div class="row">
+<div class="col">
 <?php $big = 999999999; // we need an unlikely integer
  echo paginate_links( array(
     "base" => str_replace( $big, "%#%", get_pagenum_link( $big ) ),
