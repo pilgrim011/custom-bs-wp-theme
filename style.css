@@ -12,11 +12,11 @@
  Text Domain:  jobbrstestchild
 */
 @font-face {
-  font-family: myriad-pro;
+  font-family: "Myriad Pro";
   src: url("./fonts/myriad_pro_regular.ttf");
 }
 @font-face {
-  font-family: karla-regular;
+  font-family: "Karla Regular";
   src: url("./fonts/karla-regular.ttf");
 }
 
@@ -50,10 +50,10 @@ body {
   height: 100%;
 }
 h1#h1title {
-  font-family: myriad-pro !important;
+  font-family: "Myriad Pro" !important;
 }
 p#subtitle {
-  font-family: karla-regular !important;
+  font-family: "Karla Regular" !important;
 }
 h3#h3title {
   font-family: "Roboto Light";
@@ -75,9 +75,6 @@ h3.widget-title {
   top: 50%;
   transform: translateY(-50%);
 }
-/*p {
-  font-family: "Roboto" !important;
-}*/
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
@@ -134,7 +131,6 @@ a#readmore {
   text-transform: uppercase;
 }
 img.wp-post-image {
-  /*margin-top: 60% !important;*/
   max-width: 100%;
   height: auto;
   clear: both;
@@ -167,5 +163,6 @@ ul.page-numbers li {
   display: inline;
 }
 .current {
-  color: blue;
+  color: #7dfcbf;
+  font-size: larger;
 }

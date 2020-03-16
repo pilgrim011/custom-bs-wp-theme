@@ -1,4 +1,6 @@
 <?php
+//add new jquery version, bootstrap and popper.js necessary for collapsing menu
+add_action( "wp_enqueue_scripts", "my_script_enqueue" );
 function my_script_enqueue() {
     
     wp_enqueue_script( "jquery_js", get_stylesheet_directory_uri() . "/dist/jquery/jquery-3.4.1.min.js" );
@@ -10,7 +12,6 @@ function my_script_enqueue() {
     
 }
 
-add_action( "wp_enqueue_scripts", "my_script_enqueue" );
 
 require_once("bs4navwalker.php");
 
