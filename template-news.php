@@ -28,7 +28,7 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <div class="col-sm-8">
     
   <h3 id="h3title"><?php echo str_replace(",", ",<br />", get_the_title()); ?></h3>
-  <div class="d-flex"><?php  echo get_avatar( get_the_author_email(), "32" ); ?><p id="author" class="ml-2"><?php the_author(); ?></p></div>
+  <div class="d-flex align-items-center"><div><?php  echo get_avatar( get_the_author_email(), "32" ); ?></div><div class="ml-3 mt-3"><p id="author"><?php the_author(); ?></p></div></div>
   <div class="col-sm">
   <div class="row">
     <div class="col-sm">
