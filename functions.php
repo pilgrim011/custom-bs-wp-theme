@@ -79,7 +79,7 @@ add_theme_support( "post-thumbnails" );
     add_filter("excerpt_more", "new_excerpt_more");
    
     add_filter( "excerpt_length", function($length) {
-        return 69;
+        return 69; 
     } );
 
     add_filter( "wp_generate_tag_cloud_data", function( $tag_data )
